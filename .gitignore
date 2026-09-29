@@ -1,0 +1,66 @@
+# ─── OS / Editor artifacts ──────────────────────────────────────────────────
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+Thumbs.db
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# ─── IDE ─────────────────────────────────────────────────────────────────────
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# ─── Flutter / Dart / Pub ────────────────────────────────────────────────────
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# ─── Symbolication / Obfuscation ─────────────────────────────────────────────
+app.*.symbols
+app.*.map.json
+
+# ─── Android build artifacts ──────────────────────────────────────────────────
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ─── Secrets / Credentials ───────────────────────────────────────────────────
+# Do not commit API keys, environment files, or local Android properties
+*.env
+.env.*
+local.properties
+.agents/
+*.jks
+*.keystore
+*.key
+*.pem
+
+# ─── Large training artefacts (local only) ───────────────────────────────────
+# These directories contain multi-megabyte training outputs and are
+# excluded from version control entirely.
+pomegranate_nano_final_package/
+pomegranate_nano_final_package.zip
+pomegranate_weights_and_model/
+pomegranate_yolo26_416_final_package/
+pomegranate_yolo26_final_package/
+pomograte_Growth/
+pomograte_Growth.zip
+pest_model/
+universal_pest_yolo26s_int8_package/
+
+# ─── Scratch / project planning files ────────────────────────────────────────
+problemstatement.txt

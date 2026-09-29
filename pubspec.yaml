@@ -1,0 +1,55 @@
+name: smartkheti
+description: "SmartKheti – AI-powered crop disease detection for pomegranate farmers."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Flutter localization support
+  flutter_localizations:
+    sdk: flutter
+
+  # Internationalization package
+  intl: ^0.20.3
+
+  # Modern icon set
+  cupertino_icons: ^1.0.8
+  # Image picker (camera + gallery) for static scan
+  image_picker: ^1.0.7
+
+  # Official Ultralytics YOLO plugin — handles camera, inference, overlays natively
+  ultralytics_yolo: ^0.6.14
+
+  # Local file storage for captured images
+  path_provider: ^2.1.5
+
+  # Save captured images to device gallery
+  gal: ^2.3.0
+  lucide_icons_flutter: ^3.1.19
+
+  # Android System Tray Notifications for Edge-AI Diagnostics
+  flutter_local_notifications: ^22.3.1
+  # Persistent cooldown cache across app suspensions
+  shared_preferences: ^2.5.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Disease detection model (YOLO26n INT8, 416×416)
+  # Place .tflite in assets/models/ — the ultralytics_yolo plugin resolves
+  # Flutter asset paths automatically on Android.
+  assets:
+    - assets/models/pomegranate_yolo26n_416_int8.tflite
+    - assets/models/pomegranate_yolo26n_int8.tflite
+    - assets/models/pest_yolo26s_int8.tflite
+    - assets/models/pomegranate_growth_yolo26n_640_int8.tflite

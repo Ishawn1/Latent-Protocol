@@ -1,0 +1,7 @@
+﻿# SmartKheti — Git LFS Configuration
+
+# Track all TFLite model binary files with Git LFS
+assets/models/*.tflite filter=lfs diff=lfs merge=lfs -text
+
+# Track large zip archives (if checked in)
+*.zip filter=lfs diff=lfs merge=lfs -text
