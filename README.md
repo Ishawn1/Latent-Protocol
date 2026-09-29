@@ -198,15 +198,6 @@ flutter pub get
 flutter run --dart-define=WEATHER_API_KEY=<your_key>
 ```
 
-### Environment Variables
-
-| Variable | Description | Behaviour without it |
-|---|---|---|
-| `WEATHER_API_KEY` | [WeatherAPI.com](https://www.weatherapi.com/) API key | App uses a physics-based diurnal fallback model; no external calls are made |
-
-> **Tip:** Get a free API key at [weatherapi.com](https://www.weatherapi.com/) and pass it with `--dart-define=WEATHER_API_KEY=your_key`.
-
----
 
 ## Project Structure
 
