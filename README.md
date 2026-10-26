@@ -10,6 +10,7 @@
 - [Key Features](#key-features)
 - [System Architecture](#system-architecture)
 - [Hardware — ESP32-S3 Field Unit](#hardware--esp32-s3-field-unit)
+- ![SmartKheti ESP32-S3 Field Unit](assets/Smartkheti-Hardware.png)
   - [Components](#components)
   - [Wiring Reference](#wiring-reference)
   - [Flashing the Firmware](#flashing-the-firmware)
