@@ -112,7 +112,7 @@ The platform is designed to work in areas with **poor or no internet connectivit
 
 ## Hardware — ESP32-S3 Field Unit
 
-![SmartKheti ESP32-S3 Field Unit](assets/Smartkheti-Hardware.png)
+![SmartKheti ESP32-S3 Field Unit](assets/SmartKheti-Hardware.png)
 
 ### Components
 
